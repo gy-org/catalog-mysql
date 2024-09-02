@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: catalog-mysql
+  annotations:
+    github.com/project-slug: gy-org/catalog-mysql
+    backstage.io/kubernetes-label-selector: 'app=catalog-mysql'
+  description: catalog-mysql created
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
+  # dependsOn:
+  #   - crossplane-eks-demo-05
